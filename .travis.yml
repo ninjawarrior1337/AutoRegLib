@@ -14,6 +14,7 @@ cache:
 
 script: "./gradlew build test"
 install: "./gradlew setupCIWorkspace"
+before_install: "chmod +x gradlew"
 branches:
   only:
   - master
