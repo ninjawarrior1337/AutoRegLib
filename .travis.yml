@@ -12,8 +12,8 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-script: "gradle build test"
-install: "gradle setupCIWorkspace"
+script: "./gradlew build test"
+install: "./gradlew setupCIWorkspace"
 branches:
   only:
   - master
